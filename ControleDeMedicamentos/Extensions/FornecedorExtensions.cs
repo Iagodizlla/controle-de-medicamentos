@@ -1,4 +1,4 @@
-﻿using ControleDeMedicamentos.Models;
+﻿using ControleDeMedicamentos.Model;
 using ControleDeMedicamentos.ModuloFornecedor;
 
 namespace ControleDeMedicamentos.Extensions;

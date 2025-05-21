@@ -1,7 +1,7 @@
 ﻿using ControleDeMedicamentos.Extensions;
 using ControleDeMedicamentos.ModuloFornecedor;
 
-namespace ControleDeMedicamentos.Models;
+namespace ControleDeMedicamentos.Model;
 
 public abstract class FormularioFornecedorViewModel
 {

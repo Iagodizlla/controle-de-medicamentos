@@ -1,6 +1,6 @@
 ﻿using ControleDeMedicamentos.Compartilhado;
 using ControleDeMedicamentos.Extensions;
-using ControleDeMedicamentos.Models;
+using ControleDeMedicamentos.Model;
 using ControleDeMedicamentos.ModuloFornecedor;
 using System.Web.Mvc;
 using Microsoft.AspNetCore.Mvc;
