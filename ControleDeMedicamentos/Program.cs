@@ -1,11 +1,4 @@
-﻿using ControleDeMedicamentos.Compartilhado;
-using ControleDeMedicamentos.ModuloMedicamento;
-using ControleDeMedicamentos.ModuloPrescricaoMedica;
-using ControleDeMedicamentos.ModuloRequisicaoEntrada;
-using ControleDeMedicamentos.ModuloRequisicaoSaida;
-using ControleDeMedicamentos.Util;
-
-namespace ControleDeMedicamentos;
+﻿namespace ControleDeMedicamentos;
 
 public class Program
 {
