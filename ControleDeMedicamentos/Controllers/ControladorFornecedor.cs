@@ -1,7 +1,8 @@
 ﻿using ControleDeMedicamentos.Compartilhado;
 using ControleDeMedicamentos.Extensions;
-using ControleDeMedicamentos.Model;
+using ControleDeMedicamentos.Models;
 using ControleDeMedicamentos.ModuloFornecedor;
+using System.Web.Mvc;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ControleDeMedicamentos.Controllers;
@@ -15,13 +16,14 @@ public class ControladorFornecedor : Controller
     public ControladorFornecedor()
     {
         contextoDados = new ContextoDados(true);
-        repositorioFornecedor = new RepositorioFornecedorEmArquivo(contextoDados);
+        repositorioFornecedor = new RepositorioFornecedor(contextoDados);
     }
 
     [HttpGet("cadastrar")]
     public IActionResult Cadastrar()
     {
         var cadastrarVM = new CadastrarFornecedorViewModel();
+
         return View("Cadastrar", cadastrarVM);
     }
 
@@ -99,7 +101,7 @@ public class ControladorFornecedor : Controller
     [HttpGet("visualizar")]
     public IActionResult Visualizar()
     {
-        var registros = repositorioFornecedor.SelecionarRegistros();
+        var registros = repositorioFornecedor.SelecionarTodos();
 
         var visualizarVM = new VisualizarFornecedoresViewModel(registros);
 

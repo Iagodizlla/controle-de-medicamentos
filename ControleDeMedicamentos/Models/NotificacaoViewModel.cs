@@ -1,4 +1,4 @@
-﻿namespace ControleDeMedicamentos.Model;
+﻿namespace ControleDeMedicamentos.Models;
 
 public class NotificacaoViewModel
 {
